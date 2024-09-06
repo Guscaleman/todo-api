@@ -164,7 +164,7 @@ Após o usuário estar logado, ele deve conseguir gerenciar seu CRUD até que su
 }
 ```
 
-<h2 align ='center'> Criação de tarefas </h2>
+<h2 align ='center'> Criar tarefas para seu perfil </h2>
 
 `POST /tasks - FORMATO DA REQUISIÇÃO`
 
@@ -220,9 +220,9 @@ Quando o formato de requisição não é compatível com o padrão.
 }
 ```
 
-### Leitura de tarefas GET /tasks (Precisa de autorização)
+<h2 align ='center'> Listar tarefas criadas no seu perfil </h2>
 
-Padrão de resposta (STATUS: 200)
+`GET /tasks - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
 [
@@ -238,24 +238,11 @@ Padrão de resposta (STATUS: 200)
 	}
 ]
 ```
+<h2 align ='center'> Possíveis erros </h2>
 
-URL Search Params
+`GET /tasks - FORMATO DA RESPOSTA - STATUS 401`
 
-| Parâmetro | Exemplo de uso         | Descrição                                                                          |
-| --------- | ---------------------- | ---------------------------------------------------------------------------------- |
-| category  | /tasks?category=estudo | Forneça o valor do campo name para trazer somente tarefas da categoria determinada |
-
-#### Possíveis erros:
-
-STATUS (404) - Categoria inválida
-
-```json
-{
-	"message": "Category not found"
-}
-```
-
-STATUS (401) - O token é obrigatório
+Caso o token não seja informado.
 
 ```json
 {
