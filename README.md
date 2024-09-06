@@ -25,7 +25,7 @@ Seu insomnia deve ficar da seguinte forma:
 
 <br>
 
-A url base da API é https://kenziehub.herokuapp.com
+A url base da API é https://todo-api-production-7540.up.railway.app
 
 ### Cadastro de usuário POST /users
 
