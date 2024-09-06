@@ -254,8 +254,6 @@ Caso o token não seja informado.
 
 `GET /tasks/:1 - FORMATO DA RESPOSTA - STATUS 200`
 
-Padrão de resposta (STATUS: 200)
-
 ```json
 {
 	"id": 1,
@@ -291,9 +289,11 @@ Caso o token não seja informado.
 }
 ```
 
+<h2 align ='center'> Editar tarefas </h2>
+
 ### Atualizar tarefa PATCH /tasks/:id (Precisa de autorização)
 
-Padrão de corpo
+`PATCH /tasks/:1 - FORMATO DA REQUISIÇÃO`
 
 ```json
 {
@@ -304,7 +304,7 @@ Padrão de corpo
 }
 ```
 
-Padrão de resposta (STATUS: 200)
+`PATCH /tasks/:1 - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
 {
