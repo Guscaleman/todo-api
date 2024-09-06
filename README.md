@@ -3,7 +3,7 @@
 </h1>
 
 <p align = "center">
-Este é o backend da aplicação Todo App - Um gerenciador de tarefas pessoal! O objetivo dessa aplicação é conseguir criar uma API REST utilizando conceitos de CRUD, SOLID e Clean Code.
+Este é o backend da aplicação Todo App - Um gerenciador de tarefas pessoal desenvolvido exclusivamente para o desafio da JackExperts! O objetivo dessa aplicação é conseguir criar uma API REST utilizando conceitos de CRUD, SOLID e Clean Code.
 </p>
 
 <blockquote align="center">“Paciência você deve ter, meu jovem Padawan. - Mestre Yoda”</blockquote>
