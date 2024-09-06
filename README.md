@@ -471,3 +471,7 @@ Caso a categoria não pertença ao usuário.
 	"message": "This user is not the category owner"
 }
 ```
+
+---
+
+Feito com ♥ by Guscaleman :wave:
