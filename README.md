@@ -35,7 +35,7 @@ A url base da API é https://todo-api-production-7540.up.railway.app
 
 <h2 align ='center'> Cadastro de usuário </h2>
 
-`POST /users - FORMATO DA RESPOSTA - STATUS 200`
+`POST /users - FORMATO DA REQUISIÇÃO - STATUS 200`
 
 Padrão de corpo
 
