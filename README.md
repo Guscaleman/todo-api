@@ -33,7 +33,9 @@ A url base da API é https://todo-api-production-7540.up.railway.app
 
 ## Rotas que não precisam de autenticação
 
-### Cadastro de usuário POST /users
+<h2 align ='center'> Cadastro de usuário </h2>
+
+`POST /users - FORMATO DA RESPOSTA - STATUS 200`
 
 Padrão de corpo
 
