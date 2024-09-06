@@ -1,6 +1,10 @@
 <h1 align="center">
-  Kenzie Hub - API
+  TodoAPI
 </h1>
+
+<p align = "center">
+Este é o backend da aplicação Todo App - Um gerenciador de tarefas pessoal! O objetivo dessa aplicação é conseguir criar uma API REST utilizando conceitos de CRUD, SOLID e Clean Code.
+</p>
 
 ### Cadastro de usuário POST /users
 
