@@ -164,6 +164,8 @@ Após o usuário estar logado, ele deve conseguir gerenciar seu CRUD até que su
 }
 ```
 
+<h2 align ='center'> Criação de tarefas </h2>
+
 `POST /tasks - FORMATO DA REQUISIÇÃO`
 
 ```json
