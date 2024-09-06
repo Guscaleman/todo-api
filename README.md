@@ -45,7 +45,7 @@ A url base da API é https://todo-api-production-7540.up.railway.app
 }
 ```
 
-Padrão de resposta (STATUS: 201)
+`POST /users - FORMATO DA RESPOSTA - STATUS 201`
 
 ```json
 {
