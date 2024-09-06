@@ -57,7 +57,10 @@ A url base da API é https://todo-api-production-7540.up.railway.app
 
 <h2 align ='center'> Possíveis erros </h2>
 
-STATUS (409) - Email já cadastrado
+Caso o email já esteja cadastrado no banco de dados.
+
+`POST /users - `
+` FORMATO DA RESPOSTA - STATUS 409`
 
 ```json
 {
@@ -65,7 +68,16 @@ STATUS (409) - Email já cadastrado
 }
 ```
 
-STATUS (400) quando o corpo não é compatível com o padrão
+Quando o corpo não é compatível com o padrão.
+
+`POST /users - `
+` FORMATO DA RESPOSTA - STATUS 400`
+
+```json
+{
+	"message": "Invalid email"
+}
+```
 
 ### Login de usuário POST /users/login
 
