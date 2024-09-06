@@ -16,8 +16,16 @@ Este é o backend da aplicação Todo App - Um gerenciador de tarefas pessoal! O
 
 A API tem um total de 11 endpoints, sendo em volta principalmente do usuário - podendo cadastrar seu perfil, fazer login, relogar automaticamente, e administrar suas tarefas como desejar. <br/>
 
-<a href="https://insomnia.rest/run/?label=TodoAPI&uri=https%3A%2F%2Fraw.githubusercontent.com%2FGuscaleman%2Ftodoapi-insomnia%2Fmain%2FInsomnia_2024-09-06.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+<a style="display:flex; justify-content:center" href="https://insomnia.rest/run/?label=TodoAPI&uri=https%3A%2F%2Fraw.githubusercontent.com%2FGuscaleman%2Ftodoapi-insomnia%2Fmain%2FInsomnia_2024-09-06.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 
+<blockquote> Para importar o JSON no Insomnia é só clicar no botão "Run in Insomnia". Depois é só seguir os passos que ele irá importar todos os endpoints em seu insomnia.
+Em seguida troque o ambiente (environment) para "Production", conforme imagem abaixo.
+</blockquote>
+ <img alt="KenzieHub" title="KenzieHub" src="https://github.com/Kenzie-Academy-Brasil-Developers/kenziehub-api/blob/master/insomnia_print.png" />
+
+<br>
+
+A url base da API é https://kenziehub.herokuapp.com
 
 ### Cadastro de usuário POST /users
 
