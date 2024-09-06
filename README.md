@@ -12,6 +12,9 @@ Este é o backend da aplicação Todo App - Um gerenciador de tarefas pessoal! O
   <a href="#endpoints">Endpoints</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
+## **Endpoints**
+
+A API tem um total de 11 endpoints, sendo em volta principalmente do usuário - podendo cadastrar seu perfil, fazer login, relogar automaticamente, e administrar suas tarefas como desejar. <br/>
 
 ### Cadastro de usuário POST /users
 
