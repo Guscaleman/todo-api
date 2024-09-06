@@ -37,8 +37,6 @@ A url base da API é https://todo-api-production-7540.up.railway.app
 
 `POST /users - FORMATO DA REQUISIÇÃO - STATUS 200`
 
-Padrão de corpo
-
 ```json
 {
 	"name": "John Doe",
