@@ -19,7 +19,7 @@ A API tem um total de 11 endpoints, sendo em volta principalmente do usuário - 
 <a style="display:flex; justify-content:center" href="https://insomnia.rest/run/?label=TodoAPI&uri=https%3A%2F%2Fraw.githubusercontent.com%2FGuscaleman%2Ftodoapi-insomnia%2Fmain%2FInsomnia_2024-09-06.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 
 <blockquote> Para importar o JSON no Insomnia é só clicar no botão "Run in Insomnia". Depois é só seguir os passos que ele irá importar todos os endpoints em seu insomnia.
-
+Seu insomnia deve ficar da seguinte forma:
 </blockquote>
  <img alt="TodoAPI" title="TodoAPI" src="https://github.com/Guscaleman/todoapi-insomnia/blob/main/insomniatodoapi.png" />
 
