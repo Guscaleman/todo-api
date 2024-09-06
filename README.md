@@ -79,9 +79,9 @@ Quando o corpo não é compatível com o padrão.
 }
 ```
 
-### Login de usuário POST /users/login
+<h2 align ='center'> Login </h2>
 
-Padrão de corpo
+`POST /users/login - FORMATO DA REQUISIÇÃO - STATUS 200`
 
 ```json
 {
@@ -90,7 +90,7 @@ Padrão de corpo
 }
 ```
 
-Padrão de resposta (STATUS: 200)
+`POST /users/login - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
 {
@@ -103,7 +103,7 @@ Padrão de resposta (STATUS: 200)
 }
 ```
 
-#### Possíveis erros:
+<h2 align ='center'> Possíveis erros </h2>
 
 STATUS (404) - Usuário não existente
 
