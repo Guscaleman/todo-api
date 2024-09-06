@@ -164,9 +164,7 @@ Após o usuário estar logado, ele deve conseguir gerenciar seu CRUD até que su
 }
 ```
 
-### Criação de tarefa POST /tasks (Precisa de autorização)
-
-Padrão de corpo
+`POST /tasks - FORMATO DA REQUISIÇÃO`
 
 ```json
 {
@@ -176,7 +174,7 @@ Padrão de corpo
 }
 ```
 
-Padrão de resposta (STATUS: 201)
+`POST /tasks - FORMATO DA RESPOSTA - STATUS 201`
 
 ```json
 {
@@ -188,9 +186,11 @@ Padrão de resposta (STATUS: 201)
 }
 ```
 
-#### Possíveis erros:
+<h2 align ='center'> Possíveis erros </h2>
 
-STATUS (404) - Categoria inválida
+Caso a categoria informada não exista.
+
+`POST /tasks - FORMATO DA RESPOSTA - STATUS 404`
 
 ```json
 {
@@ -198,7 +198,9 @@ STATUS (404) - Categoria inválida
 }
 ```
 
-STATUS (401) - O token é obrigatório
+Caso o token não seja informado.
+
+`POST /tasks - FORMATO DA RESPOSTA - STATUS 401`
 
 ```json
 {
@@ -206,7 +208,15 @@ STATUS (401) - O token é obrigatório
 }
 ```
 
-STATUS (400) quando o corpo não é compatível com o padrão
+Quando o formato de requisição não é compatível com o padrão.
+
+`POST /tasks - FORMATO DA RESPOSTA - STATUS 400`
+
+```json
+{
+	"message": "String must contain at least 1 character(s)"
+}
+```
 
 ### Leitura de tarefas GET /tasks (Precisa de autorização)
 
