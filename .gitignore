@@ -14,7 +14,6 @@ dist-ssr
 .env
 .env.dev
 .env.test
-Dockerfile
 
 # Editor directories and files
 .vscode/*

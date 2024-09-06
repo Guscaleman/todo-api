@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:20
 
 WORKDIR /usr/app
 
@@ -9,6 +9,8 @@ RUN npm install
 COPY . .
 
 RUN npx prisma generate
+
+RUN npx prisma migrate deploy
 
 RUN npm run build
 
