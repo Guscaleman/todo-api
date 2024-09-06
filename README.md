@@ -25,7 +25,7 @@ A API tem um total de 11 endpoints, sendo em volta principalmente do usuário - 
 
 <br>
 
-Com o propósito de facilitar o deploy deste serviço no Railway, decidi criar esse repositório separado do repositório da entrega principal.
+Com o propósito de facilitar o deploy deste serviço no Railway, decidi criar esse repositório separado do repositório da aplicação TodoAPP.
 
 <br>
 
