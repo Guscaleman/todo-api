@@ -414,7 +414,7 @@ Caso a tarefa não pertença ao usuário.
 {
 	"id": 1,
 	"name": "Example",
-	"userId: 1
+	"userId": 1
 }
 ```
 
@@ -464,7 +464,7 @@ Caso o token não seja informado.
 
 Caso a categoria não pertença ao usuário.
 
-`DELETE /categories/:id - FORMATO DA RESPOSTA - STATUS 401`
+`DELETE /categories/:id - FORMATO DA RESPOSTA - STATUS 403`
 
 ```json
 {
