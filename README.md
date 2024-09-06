@@ -55,7 +55,7 @@ A url base da API é https://todo-api-production-7540.up.railway.app
 }
 ```
 
-#### Possíveis erros:
+<h2 align ='center'> Possíveis erros </h2>
 
 STATUS (409) - Email já cadastrado
 
