@@ -1,4 +1,6 @@
-# API de gerenciamento de tarefas
+<h1 align="center">
+  Kenzie Hub - API
+</h1>
 
 ### Cadastro de usuário POST /users
 
