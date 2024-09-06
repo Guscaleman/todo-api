@@ -250,7 +250,9 @@ Caso o token não seja informado.
 }
 ```
 
-### Leitura de individual GET /tasks/:1 (Precisa de autorização)
+<h2 align ='center'> Listar tarefas individuais </h2>
+
+`GET /tasks/:1 - FORMATO DA RESPOSTA - STATUS 200`
 
 Padrão de resposta (STATUS: 200)
 
@@ -267,9 +269,11 @@ Padrão de resposta (STATUS: 200)
 }
 ```
 
-#### Possíveis erros:
+<h2 align ='center'> Possíveis erros </h2>
 
-STATUS (404) - Tarefa inválida
+Caso o id da tarefa não exista.
+
+`GET /tasks/:1 - FORMATO DA RESPOSTA - STATUS 404`
 
 ```json
 {
@@ -277,7 +281,9 @@ STATUS (404) - Tarefa inválida
 }
 ```
 
-STATUS (401) - O token é obrigatório
+Caso o token não seja informado.
+
+`GET /tasks/:1 - FORMATO DA RESPOSTA - STATUS 401`
 
 ```json
 {
