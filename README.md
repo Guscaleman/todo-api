@@ -105,7 +105,10 @@ Quando o corpo não é compatível com o padrão.
 
 <h2 align ='center'> Possíveis erros </h2>
 
-STATUS (404) - Usuário não existente
+Caso o usuário não esteja cadastrado.
+
+`POST /users/login - `
+` FORMATO DA RESPOSTA - STATUS 404`
 
 ```json
 {
@@ -113,7 +116,10 @@ STATUS (404) - Usuário não existente
 }
 ```
 
-STATUS (401) - Email e senha não correspondem
+Caso o email ou senha inseridos estejam incorretos.
+
+`POST /users/login - `
+` FORMATO DA RESPOSTA - STATUS 401`
 
 ```json
 {
@@ -121,7 +127,16 @@ STATUS (401) - Email e senha não correspondem
 }
 ```
 
-STATUS (400) quando o corpo não é compatível com o padrão
+Quando o formato de requisição não é compatível com o padrão.
+
+`POST /users/login - `
+` FORMATO DA RESPOSTA - STATUS 400`
+
+```json
+{
+	"message": "Invalid email"
+}
+```
 
 ### Recuperação de usuário GET /users/profile (Precisa de autorização)
 
