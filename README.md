@@ -31,6 +31,8 @@ Com o propósito de facilitar o deploy deste serviço no Railway, decidi criar e
 
 A url base da API é https://todo-api-production-7540.up.railway.app
 
+## Rotas que não precisam de autenticação
+
 ### Cadastro de usuário POST /users
 
 Padrão de corpo
