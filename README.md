@@ -25,6 +25,7 @@ A API tem um total de 11 endpoints, sendo em volta principalmente do usuário - 
 
 <br>
 
+Com o propósito de facilitar o deploy deste serviço no Railway, decidi criar esse repositório separado da repositório da entrega principal.
 A url base da API é https://todo-api-production-7540.up.railway.app
 
 ### Cadastro de usuário POST /users
