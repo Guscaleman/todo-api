@@ -138,9 +138,23 @@ Quando o formato de requisição não é compatível com o padrão.
 }
 ```
 
-### Recuperação de usuário GET /users/profile (Precisa de autorização)
+## Rotas que necessitam de autorização
 
-Padrão de resposta (STATUS: 200)
+Rotas que necessitam de autorização deve ser informado no cabeçalho da requisição o campo "Authorization", dessa forma:
+
+> Authorization: Bearer {token}
+
+Após o usuário estar logado, ele deve conseguir gerenciar seu CRUD até que sua autorização expire.
+
+<h2 align ='center'> Buscar Perfil do usuário logado (token) </h2>
+
+`GET /users/profile - FORMATO DA REQUISIÇÃO`
+
+<blockquote>Na requisição apenas é necessário o TOKEN, a aplicação ficará responsável em buscar o id do usuário no token e retorna ele.</blockquote>
+
+<br>
+
+`GET /users/profile - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
 {
