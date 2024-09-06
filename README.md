@@ -291,8 +291,6 @@ Caso o token não seja informado.
 
 <h2 align ='center'> Editar tarefas </h2>
 
-### Atualizar tarefa PATCH /tasks/:id (Precisa de autorização)
-
 `PATCH /tasks/:1 - FORMATO DA REQUISIÇÃO`
 
 ```json
@@ -316,9 +314,11 @@ Caso o token não seja informado.
 }
 ```
 
-#### Possíveis erros:
+<h2 align ='center'> Possíveis erros </h2>
 
-STATUS (404) - Tarefa inválida
+Caso o id da tarefa não exista.
+
+`PATCH /tasks/:1 - FORMATO DA RESPOSTA - STATUS 404`
 
 ```json
 {
@@ -326,7 +326,9 @@ STATUS (404) - Tarefa inválida
 }
 ```
 
-STATUS (404) - Categoria inválida
+Caso a categoria informada não exista.
+
+`PATCH /tasks/:1 - FORMATO DA RESPOSTA - STATUS 404`
 
 ```json
 {
@@ -334,7 +336,9 @@ STATUS (404) - Categoria inválida
 }
 ```
 
-STATUS (401) - O token é obrigatório
+Caso o token não seja informado.
+
+`PATCH /tasks/:1 - FORMATO DA RESPOSTA - STATUS 401`
 
 ```json
 {
@@ -342,7 +346,9 @@ STATUS (401) - O token é obrigatório
 }
 ```
 
-STATUS (403) - Tarefa não pertence ao usuário
+Caso a tarefa não pertença ao usuário.
+
+`PATCH /tasks/:1 - FORMATO DA RESPOSTA - STATUS 403`
 
 ```json
 {
@@ -350,15 +356,21 @@ STATUS (403) - Tarefa não pertence ao usuário
 }
 ```
 
-STATUS (409) quando o corpo não é compatível com o padrão
+Quando o formato de requisição não é compatível com o padrão.
 
-### Excluir tarefa DELETE /tasks/:id (Precisa de autorização)
+`PATCH /tasks/:1 - FORMATO DA RESPOSTA - STATUS 400`
 
-Esta rota não tem corpo no padrão de resposta (STATUS: 204)
+<h2 align ='center'> Excluir tarefa </h2>
 
-#### Possíveis erros:
+`DELETE /tasks/:id - FORMATO DA RESPOSTA - STATUS 204`
 
-STATUS (404) - Tarefa inválida
+Esta rota não tem corpo no padrão de resposta.
+
+<h2 align ='center'> Possíveis erros </h2>
+
+Caso o id da tarefa não exista.
+
+`DELETE /tasks/:1 - FORMATO DA RESPOSTA - STATUS 404`
 
 ```json
 {
@@ -366,7 +378,9 @@ STATUS (404) - Tarefa inválida
 }
 ```
 
-STATUS (401) - O token é obrigatório
+Caso o token não seja informado.
+
+`DELETE /tasks/:1 - FORMATO DA RESPOSTA - STATUS 401`
 
 ```json
 {
@@ -374,7 +388,9 @@ STATUS (401) - O token é obrigatório
 }
 ```
 
-STATUS (403) - Tarefa não pertence ao usuário
+Caso a tarefa não pertença ao usuário.
+
+`DELETE /tasks/:1 - FORMATO DA RESPOSTA - STATUS 403`
 
 ```json
 {
@@ -382,9 +398,9 @@ STATUS (403) - Tarefa não pertence ao usuário
 }
 ```
 
-### Criação de categoria POST /categories (Precisa de autorização)
+<h2 align ='center'> Criação de categorias </h2>
 
-Padrão de corpo
+`POST /categories - FORMATO DA REQUISIÇÃO`
 
 ```json
 {
@@ -392,18 +408,21 @@ Padrão de corpo
 }
 ```
 
-Padrão de resposta (STATUS 201)
+`POST /categories - FORMATO DA RESPOSTA - STATUS 201`
 
 ```json
 {
 	"id": 1,
-	"name": "Example"
+	"name": "Example",
+	"userId: 1
 }
 ```
 
-#### Possíveis erros:
+<h2 align ='center'> Possíveis erros </h2>
 
-STATUS (401) - O token é obrigatório
+Caso o token não seja informado.
+
+`POST /categories - FORMATO DA RESPOSTA - STATUS 401`
 
 ```json
 {
@@ -411,15 +430,21 @@ STATUS (401) - O token é obrigatório
 }
 ```
 
-STATUS (409) quando o corpo não é compatível com o padrão
+Quando o formato de requisição não é compatível com o padrão.
 
-### Exclusão de categoria DELETE /categories/:id (Precisa de autorização)
+`POST /categories - FORMATO DA RESPOSTA - STATUS 400`
 
-Está rota não tem um corpo de resposta (STATUS: 204)
+<h2 align ='center'> Excluir categoria </h2>
 
-#### Possíveis erros:
+`DELETE /categories/:id - FORMATO DA RESPOSTA - STATUS 204`
 
-STATUS (404) - Categoria inválida
+Esta rota não tem corpo no padrão de resposta.
+
+<h2 align ='center'> Possíveis erros </h2>
+
+Caso a categoria informada não exista.
+
+`DELETE /categories/:id - FORMATO DA RESPOSTA - STATUS 404`
 
 ```json
 {
@@ -427,7 +452,9 @@ STATUS (404) - Categoria inválida
 }
 ```
 
-STATUS (401) - O token é obrigatório
+Caso o token não seja informado.
+
+`DELETE /categories/:id - FORMATO DA RESPOSTA - STATUS 401`
 
 ```json
 {
@@ -435,7 +462,9 @@ STATUS (401) - O token é obrigatório
 }
 ```
 
-STATUS (403) - Categoria não pertence ao usuário
+Caso a categoria não pertença ao usuário.
+
+`DELETE /categories/:id - FORMATO DA RESPOSTA - STATUS 401`
 
 ```json
 {
