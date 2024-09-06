@@ -6,6 +6,13 @@
 Este é o backend da aplicação Todo App - Um gerenciador de tarefas pessoal! O objetivo dessa aplicação é conseguir criar uma API REST utilizando conceitos de CRUD, SOLID e Clean Code.
 </p>
 
+<blockquote align="center">“Paciência você deve ter, meu jovem Padawan. - Mestre Yoda”</blockquote>
+
+<p align="center">
+  <a href="#endpoints">Endpoints</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
 ### Cadastro de usuário POST /users
 
 Padrão de corpo
